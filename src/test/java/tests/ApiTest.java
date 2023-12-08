@@ -103,7 +103,7 @@ public class ApiTest extends TestBase {
                         .when()
                         .post("/register")
                         .then()
-                        .spec(registerResponseSpec)
+                        .spec(registerNegativeResponseSpec)
                         .extract().as(RegisterUserResponseModel.class));
 
         step("Проверить, что пришла ошибка", () ->

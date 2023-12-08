@@ -44,7 +44,7 @@ public class UserSpec {
             .log().body()
             .contentType(JSON);
 
-    public static ResponseSpecification registerResponseSpec = new ResponseSpecBuilder()
+    public static ResponseSpecification registerNegativeResponseSpec = new ResponseSpecBuilder()
             .log(STATUS)
             .log(BODY)
             .expectStatusCode(400)
